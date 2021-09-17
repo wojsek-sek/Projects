@@ -34,4 +34,6 @@ voice mode on
 --- and then say 'hi'
 --- and now u can do everything with your voice
 --- if u want to end voice mode say 'bye'
+8. If u want to go into instruction in the console put:
+start file tekst
 
