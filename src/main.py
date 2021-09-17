@@ -54,17 +54,17 @@ def p_command(p):
         elif p[2] == 3:
              file = p[3]
              print(f'{file} on !')
-             f = open("C:\\Users\wojte\Desktop\\tekstowy.txt",'r')
+             f = open("tekst.txt",'r')
              print(f.read())
         elif p[2] == 4:
              wallpaper = p[3]
              print(f'{wallpaper} changed !')
              if wallpaper == 'sun':
-                ctypes.windll.user32.SystemParametersInfoW(20, 0,'C:\\Users\wojte\Desktop\Main Place\Informatyka-studia\Przetwarzanie języka naturalnego\projekt pjn 1\\sun1.jpg', 0)
+                ctypes.windll.user32.SystemParametersInfoW(20, 0, 'sun1.jpg', 0)
              elif wallpaper == 'rain':
-                 ctypes.windll.user32.SystemParametersInfoW(20, 0, 'C:\\Users\wojte\Desktop\Main Place\Informatyka-studia\Przetwarzanie języka naturalnego\projekt pjn 1\\rain1.jpg', 0)
+                 ctypes.windll.user32.SystemParametersInfoW(20, 0, 'rain1.jpg', 0)
              elif wallpaper == 'snow':
-                 ctypes.windll.user32.SystemParametersInfoW(20, 0, 'C:\\Users\wojte\Desktop\Main Place\Informatyka-studia\Przetwarzanie języka naturalnego\projekt pjn 1\\snow1.jpg', 0)
+                 ctypes.windll.user32.SystemParametersInfoW(20, 0, 'snow1.jpg', 0)
 
 
     elif p[1] == 'EXIT' or p[1] =='Exit' or p[1] =='exit' or p[1] =='TURNOFF' or p[1] =='Turn off' or p[1] =='turnoff' or p[1] =='CLOSE' or p[1] =='Close' or p[1] =='close':
