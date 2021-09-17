@@ -54,11 +54,12 @@ def p_command(p):
         elif p[2] == 3:
              file = p[3]
              print(f'{file} on !')
-             f = open("tekst.txt",'r')
+             f = open("tekst",'r')
              print(f.read())
         elif p[2] == 4:
              wallpaper = p[3]
              print(f'{wallpaper} changed !')
+            # if this doesn't work u will need put there absolute path to this img - and it will be work !!!
              if wallpaper == 'sun':
                 ctypes.windll.user32.SystemParametersInfoW(20, 0, 'sun1.jpg', 0)
              elif wallpaper == 'rain':
